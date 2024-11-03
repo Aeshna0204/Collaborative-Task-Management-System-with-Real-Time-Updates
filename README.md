@@ -22,7 +22,9 @@ This Task Management System is a web application that allows users to create, up
 - **WebSocket:** Used for real-time communication
 - **Authentication:** JSON Web Tokens (JWT)
 
-## Installation
+## Configurations
+- SECRET_KEY = 'your secret key'
+- ALGORITHM = "HS256"
 
 ### Prerequisites
 
