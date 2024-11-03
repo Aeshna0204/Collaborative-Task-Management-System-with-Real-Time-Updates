@@ -39,7 +39,46 @@ virtualenv env
 Run the backend server:
 ```
 ### API Documentations
+To register a user - post request
+```
+http://localhost:8000/auth/register
+```
+The input should contain a json format of username , password and role
+
+To login a user - post request
+```
+http://localhost:8000/auth/login
+```
+The input should contain url-encoded format paramters- username and password
 For creating task - post request
 ```
 http://localhost:8000/tasks/tasks
+```
+For updating task -put request
+```
+http://localhost:8000/tasks/tasks/{task_id}
+```
+For deleting tasks - delete request
+```
+http://localhost:8000/tasks/tasks/{task_id}
+```
+for users to update the status -patch request
+```
+http://localhost:8000/tasks/tasks/{task_id}/status
+```
+for getting all the task - get request
+```
+http://localhost:8000/tasks/tasks/
+```
+for getting task by id - get request
+```
+http://localhost:8000/tasks/tasks/{task_id}
+```
+for getting task by priority
+```
+http://localhost:8000/tasks/tasks?priority={priority}
+```
+for admin to get all the tasks
+```
+http://localhost:8000/tasks/tasks/admin/
 ```
