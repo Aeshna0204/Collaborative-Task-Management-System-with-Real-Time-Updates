@@ -36,7 +36,7 @@ virtualenv env
 ```
 #### Run the backend server
 ```
-Run the backend server:
+uvicorn app.main:app --reload
 ```
 ### API Documentations
 To register a user - post request
