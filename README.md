@@ -30,11 +30,16 @@ This Task Management System is a web application that allows users to create, up
 - PostgreSQL (or any other database you prefer)
 - FastAPI
 
-# Create a virtual environment:
+#### Create a virtual environment:
 ```
 virtualenv env
 ```
-# Run the backend server
+#### Run the backend server
 ```
 Run the backend server:
+```
+### API Documentations
+For creating task - post request
+```
+http://localhost:8000/tasks/tasks
 ```
